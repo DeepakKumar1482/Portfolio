@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Typed from 'react-typed'
+// import Typed from 'react-typed'
 import Navbar from '../Components/Navbar'
 import Profileimg from '../../images/Deepak.png'
 import Outline from '../../images/Outline.svg'
@@ -16,11 +16,26 @@ import Union from '../../images/union.svg'
 import Twitter from '../../images/Twitter.svg'
 import Linkedin from '../../images/Linkedin.svg'
 import 'aos/dist/aos.css';
+import Typed from 'typed.js';
 const Home = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  
+  useEffect(() => {
+    const options = {
+      strings: ['A Full Stack MERN Developer with the', 'strong foundation in Data  Structures and Algorithms.'],
+      typeSpeed: 40,
+      backSpeed: 40,
+      loop: true,
+    };
+
+    const typed = new Typed('.typed-text', options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <Navbar>
     <div className="bg-[#282C33] h-full md:w-full w-screen flex" style={{'font-family': 'Fira Code'}}>
@@ -30,16 +45,15 @@ const Home = () => {
             <div className=' h-1/3 '>
             <h1 className='text-gray-400'>Hi, I am</h1>
             <h1 className='text-fuchsia-500 text-2xl font-bold'>Deepak Kumar Chauhan</h1>
-            {/* <p className='text-gray-400'>A Full Stack MERN Developer with a strong</p>
-            <p className='text-gray-400'>foundation in Data Structures and Algorithms.</p> */}
-            <Typed className='text-gray-400'
-            strings={["A Full Stack MERN Developer",
-            "with a strong foundation in Data Structures and Algorithms."
+            <p className="typed-text text-gray-400"></p>
+            {/* <p className=''> </p> */}
+            {/* <Typed className='text-gray-400'
+            strings={[
           ]}
           typeSpeed={150}
          backSpeed={100}
          loop
-            />
+            /> */}
             </div>
             <div className=''>
             <button className="w-32 h-10 text-[14px] border hidden md:inline-block border-fuchsia-400 bg-info text-white  hover:bg-fuchsia-400 transition ease-in-out duration-500">Contact me!!</button>
