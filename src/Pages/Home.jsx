@@ -12,7 +12,7 @@ import Todo from '../../images/Todo.svg'
 import Chat from '../../images/Chatting-pana.svg'
 import AOS from 'aos';
 import PortImage from '../../images/Image-pro.svg'
-import Union from '../../images/union.svg'
+import Union from '../../images/Union.svg'
 import Twitter from '../../images/Twitter.svg'
 import Linkedin from '../../images/Linkedin.svg'
 import 'aos/dist/aos.css';
