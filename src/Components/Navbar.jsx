@@ -1,7 +1,7 @@
 import Union from '../../images/Union.svg'
 import Line from '../../images/line.svg'
-import Github from '../../images/github.svg'
-import Dribble from '../../images/dribble.svg'
+import Github from '../../images/Github.svg'
+import Dribble from '../../images/Dribble.svg'
 import Outline from '../../images/Outline.svg'
 import { useState } from 'react'
 const Navbar = ({children}) => {
