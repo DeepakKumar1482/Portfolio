@@ -38,9 +38,9 @@ const Home = () => {
 
   return (
     <Navbar>
-    <div className="bg-[#282C33] h-full md:w-full w-screen flex" style={{'font-family': 'Fira Code'}}>
-        <div className='flex   w-full flex-col'>
-          <div className='flex w-full md:flex-row flex-col'> 
+    <div className="bg-[#282C33] h-full md:w-full w-screen flex md:p-0" style={{'font-family': 'Fira Code'}}>
+        <div className='flex  w-full  flex-col'>
+          <div className='flex w-full md:p-0 px-1  md:flex-row flex-col'> 
           <div className='md:w-1/3 w-full  md:h-full  h-40 flex flex-col justify-center'>
             <div className=' h-1/3 '>
             <h1 className='text-gray-400'>Hi, I am</h1>
@@ -70,8 +70,8 @@ const Home = () => {
           </div>
 
           </div>
-          <div className='flex flex-col'>
-           <div className='flex '>
+          <div className='flex flex-col md:p-0 p-2'>
+           <div className='flex'>
            <div>
               <img src={Quote} alt="" />
             </div>
@@ -92,10 +92,10 @@ const Home = () => {
               </div>
             </div>
             <br />
-            <div id='projectcard' className='flex flex-col  w-full'>
+            <div id='projectcard' className='flex flex-col  md:w-full '>
               <div className='flex w-full gap-5'>
-              <div className='flex md:flex-row flex-col w-full h-full gap-3'>
-                <div data-aos="zoom-in-up" className='h-80 md:w-1/3  w-screen border border-gray-400 flex flex-col'>
+              <div className='flex  md:flex-row flex-col w-full h-full gap-3'>
+                <div data-aos="zoom-in-up" className='h-80 md:w-1/3  w-full border border-gray-400 flex flex-col'>
                   <div className='border border-gray-400 h-1/2 w-full'>
                     <img className='h-full w-full' src={Docslot} alt="" />
                   </div>
@@ -110,7 +110,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="zoom-in-up" className='h-80 md:w-1/3  w-screen border border-gray-400 flex flex-col md:mt-8'style={{zIndex:1}}>
+                <div data-aos="zoom-in-up" className='h-80 md:w-1/3  w-full border border-gray-400 flex flex-col md:mt-8'style={{zIndex:1}}>
                 <div className='border border-gray-400 h-1/2 w-full '>
                     <img className='h-full w-full' src={Todo} alt="" />
                   </div>
@@ -125,7 +125,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="zoom-in-up" className='h-80 md:w-1/3  w-screen border border-gray-400 flex flex-col'>
+                <div data-aos="zoom-in-up" className='h-80 md:w-1/3  w-full border border-gray-400 flex flex-col'>
                 <div className='border border-gray-400 h-1/2 w-full '>
                     <img className='h-full w-full' src={Chat} alt="" />
                   </div>
@@ -141,7 +141,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className=' flex items-center'>
+              <div className=' md:flex hidden items-center'>
                 <img className='' src={Rectangle} alt="" />
               </div>
               </div>
@@ -269,7 +269,7 @@ const Home = () => {
                     </div>
                     </div>
                     <div className='w-full h-full  flex items-center md:justify-center'>
-                      <h1 className='text-gray-400 flex gap-2'><span className='text-2xl  flex'>©</span> Copyright 2023. Made by Deepak Kumar</h1>
+                      <h1 className='text-gray-400 flex gap-2'><span className='md:text-2xl   flex'>©</span> Copyright 2023. Made by Deepak Kumar</h1>
                     </div>
                     </div>
                   </div>

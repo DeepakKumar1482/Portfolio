@@ -35,8 +35,10 @@ const Navbar = ({children}) => {
             <img className='h-4' src={Union} alt="" />
             <h1 className='text-white'>Deepak</h1>
             </div>
-            <div className='md:hidden text-white w-full flex justify-end pr-5'>
-              <button className='text-3xl font-bold' onClick={handledisplay}>&#8801;</button>
+            <div className='md:hidden text-white w-full flex justify-end pr-3'>
+              <button className='text-3xl font-bold' onClick={handledisplay}>
+              {isMobileMenuOpen ?'✕' :<h1 className='text-3xl'>☰</h1> }
+              </button>
             </div>
           </div>
           <div className='text-gray-400 md:flex  w-3/4 justify-center gap-24 hidden'>
@@ -59,7 +61,7 @@ const Navbar = ({children}) => {
           )}
         </div>
         <br />
-        <div className='w-full h-full '>
+        <div className='w-full h-full'>
             {children}
         </div>
     </div>
